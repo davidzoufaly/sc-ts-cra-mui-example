@@ -5,6 +5,7 @@ export type GdTheme = keyof typeof gdTheme;
 const defaultFontSize = 16;
 const spacingMultiplier = 8;
 
+// can be used MUI theme object, but It is much easier to work with plain custom object
 export const gdTheme = {
   typography: {
     fontFamily: ["Arial", "Helvetica", "sans-serif"].join(","),
@@ -19,7 +20,7 @@ export const gdTheme = {
     }
   },
   spacing: (spacingVal: SpacingVal) => spacingVal * spacingMultiplier + "px",
-  size: {
+  layout: {
     deviceSize: {
       mobileS: "320px",
       mobileM: "375px",
@@ -31,21 +32,21 @@ export const gdTheme = {
     },
     breakPoints: {
       mobileS: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.mobileS})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileS})`,
       mobileM: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.mobileM})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileM})`,
       mobileL: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.mobileL})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileL})`,
       tablet: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.tablet})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.tablet})`,
       laptop: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.laptop})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.laptop})`,
       laptopL: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.laptopL})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.laptopL})`,
       desktop: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.desktop})`,
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`,
       desktopL: (minMax: MinMax) =>
-        `(${minMax}-width: ${gdTheme.size.deviceSize.desktop})`
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`
     }
   },
   colors: {

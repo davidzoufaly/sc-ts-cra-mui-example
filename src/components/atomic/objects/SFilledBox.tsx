@@ -25,7 +25,7 @@ export const StyledDiv = styled.div<IMode>`
   margin-right: ${gdTheme.spacing(2)};
   animation: ${rotate} 4s linear infinite;
 
-  @media ${gdTheme.size.breakPoints.mobileM("max")} {
+  @media ${gdTheme.layout.breakPoints.mobileM("max")} {
     width: 100%;
   }
 `;
