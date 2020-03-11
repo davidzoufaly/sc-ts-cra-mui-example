@@ -5,7 +5,6 @@ import Home from "./Pages/Home";
 import { ModeContext } from "./context/ModeContext";
 
 const App = () => {
-  // mode const should be passed to React.createContext in bigger app for easier scalling
   const mode = usePrefferedMode();
 
   return (
