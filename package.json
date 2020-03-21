@@ -15,16 +15,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx,jsx}' --quiet --fix"
+    "lint": "tsc --noEmit && prettier-eslint '*/**/*.{js,ts,tsx,jsx}' --quiet --fix"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "git add . && tsc --noEmit && lint-staged"
+      "pre-commit": "git add . && tsc --noEmit && yarn lint"
     }
   },
   "lint-staged": {
     "*.{js,ts,tsx,jsx}": [
-      "eslint --fix"
+      "yarn lint", "git add"
     ]
   },
   "eslintConfig": {

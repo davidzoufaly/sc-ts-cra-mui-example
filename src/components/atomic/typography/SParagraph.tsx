@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { gdTheme } from '../../../library/theme';
 import { TMode } from '../../../hooks/usePrefferedMode';
 
+//
+
 interface StyledPar {
   Mode: TMode;
   Color?: string;

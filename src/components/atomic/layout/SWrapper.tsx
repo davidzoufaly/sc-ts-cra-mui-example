@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { gdTheme } from '../../../library/theme';
 import { IMode } from '../../../types/layoutTypes';
 
-// scss nesting
+// SCSS nesting
 const StyledWrapper = styled.div<IMode>`
   width: 100%;
   height: 100%;
