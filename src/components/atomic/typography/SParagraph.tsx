@@ -14,9 +14,7 @@ const StyledPar = styled.p<StyledPar>`
   color: ${({ Mode, Color }) => Color || gdTheme.colors.textPrimary[Mode].main};
 `;
 
-const SParagraph: React.FC<StyledPar> = ({
-  Mode, Color, as, children,
-}) => (
+const SParagraph: React.FC<StyledPar> = ({ Mode, Color, as, children }) => (
   <StyledPar Mode={Mode} Color={Color} as={as}>
     {children}
   </StyledPar>

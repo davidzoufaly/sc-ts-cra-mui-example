@@ -10,8 +10,8 @@ import { IMode } from '../../../types/layoutTypes';
 const StyledButton = styled(({ Mode, ...props }) => <Button {...props} />)<
 IMode
 >`
-    background-color: ${({ Mode }) => gdTheme.colors.primary[Mode].main};
-    color: ${({ Mode }) => gdTheme.colors.textPrimary[Mode].main};
+  background-color: ${({ Mode }) => gdTheme.colors.primary[Mode].main};
+  color: ${({ Mode }) => gdTheme.colors.textPrimary[Mode].main};
 `;
 
 const SButton: React.FC<IMode & ButtonBaseProps> = ({
