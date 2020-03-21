@@ -3,6 +3,7 @@ import { gdTheme } from '../../library/theme';
 import { IMode } from '../../types/layoutTypes';
 import SParagraph from '../atomic/typography/SParagraph';
 
+
 const Texts: React.FC<IMode> = ({ Mode }) => (
   <>
     <SParagraph Mode={Mode}>
