@@ -1,3 +1,3 @@
-import React from "react";
+import React from 'react';
 
-export const ModeContext = React.createContext<any>("");
+export const ModeContext = React.createContext<any>('');

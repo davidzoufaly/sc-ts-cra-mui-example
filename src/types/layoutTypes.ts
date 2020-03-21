@@ -1,5 +1,5 @@
-import { Mode } from "../hooks/usePrefferedMode";
+import { TMode } from '../hooks/usePrefferedMode';
 
 export type IMode = {
-     Mode: Mode;
-}
+  Mode: TMode;
+};

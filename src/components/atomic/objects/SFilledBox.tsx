@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import { gdTheme } from "../../../library/theme";
-import { IMode } from "../../../types/layoutTypes";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import { gdTheme } from '../../../library/theme';
+import { IMode } from '../../../types/layoutTypes';
 
 // normal CSS syntax can be used, media Queries / transitions / SASS like nesting
 const rotate = keyframes`
@@ -25,13 +25,11 @@ export const StyledDiv = styled.div<IMode>`
   margin-right: ${gdTheme.spacing(2)};
   animation: ${rotate} 4s linear infinite;
 
-  @media ${gdTheme.layout.breakPoints.mobileM("max")} {
+  @media ${gdTheme.layout.breakPoints.mobileM('max')} {
     width: 100%;
   }
 `;
 
-const SFilledBox: React.FC<IMode> = ({ Mode }) => {
-  return <StyledDiv Mode={Mode} />;
-};
+const SFilledBox: React.FC<IMode> = ({ Mode }) => <StyledDiv Mode={Mode} />;
 
 export default SFilledBox;
