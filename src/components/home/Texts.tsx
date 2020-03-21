@@ -6,6 +6,7 @@ import SParagraph from '../atomic/typography/SParagraph';
 const Texts: React.FC<IMode> = ({ Mode }) => (
   <>
     <SParagraph Mode={Mode}>
+      {x}
       {`Welcome to the ${Mode} side! (Connected to browser however custom switcher in the app possible)`}
     </SParagraph>
     <SParagraph Mode={Mode} Color={gdTheme.colors.textSecondary[Mode].main}>

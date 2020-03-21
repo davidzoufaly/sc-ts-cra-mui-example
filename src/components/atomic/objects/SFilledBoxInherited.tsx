@@ -9,6 +9,8 @@ const StyledDivInherited = styled(StyledDiv)<IMode>`
   width: 200px;
 `;
 
-const SFilledBoxInherited: React.FC<IMode> = ({ Mode }) => <StyledDivInherited Mode={Mode} />;
+const SFilledBoxInherited: React.FC<IMode> = ({ Mode }) => (
+  <StyledDivInherited Mode={Mode} />
+);
 
 export default SFilledBoxInherited;
