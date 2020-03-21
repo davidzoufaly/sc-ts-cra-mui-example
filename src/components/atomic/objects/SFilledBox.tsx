@@ -15,7 +15,7 @@ const rotate = keyframes`
 `;
 
 // styles can be exported and reused in other components -> SFilledBoxInherited
-// media query example
+// media query example with mobile breakpoint
 export const StyledDiv = styled.div<IMode>`
   width: 100px;
   height: 100px;
