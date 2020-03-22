@@ -8,5 +8,7 @@ module.exports = {
     'import/extensions': 'off',
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'no-shadow': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.tsx'] }],
   },
 };
