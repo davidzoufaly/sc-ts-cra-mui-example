@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import SButton from '../components/atomic/buttons/SButton';
+import SWrapper from '../components/atomic/layout/SWrapper';
 import Boxes from '../components/home/Boxes';
 import Texts from '../components/home/Texts';
 import { ModeContext } from '../context/ModeContext';
-import SWrapper from '../components/atomic/layout/SWrapper';
 
 const Home: React.FC = () => {
   const Mode = useContext(ModeContext);
