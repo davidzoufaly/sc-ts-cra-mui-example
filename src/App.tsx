@@ -1,8 +1,9 @@
-import React from 'react';
 import { StylesProvider } from '@material-ui/core';
+import React from 'react';
+
+import { ModeContext } from './context/ModeContext';
 import { usePrefferedMode } from './hooks/usePrefferedMode';
 import Home from './Pages/Home';
-import { ModeContext } from './context/ModeContext';
 
 const App = () => {
   const mode = usePrefferedMode();

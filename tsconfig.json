@@ -3,22 +3,21 @@
     "target": "es6",
     "lib": [
       "dom",
-      "dom.iterable",
+      "DOM.Iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
+    "noImplicitThis": true,
     "noImplicitAny": false,
-    "strictNullChecks": false,
-    "strictFunctionTypes": false,
-    "noImplicitThis": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": false,
-    "noFallthroughCasesInSwitch": false,
-    "strict": false,
-    "forceConsistentCasingInFileNames": false,
-    "esModuleInterop": true,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveConstEnums": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -26,15 +25,15 @@
     "jsx": "preserve",
     "downlevelIteration": true,
     "noEmit": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules"
   ],
   "include": [
     "src/*.ts",
-    "src/*.tsx",
-    "src/*.js",
-    "src/*.jsx"
+    "src/*.tsx"
   ]
 }

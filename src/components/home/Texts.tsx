@@ -1,5 +1,6 @@
 import React from 'react';
-import { gdTheme } from '../../library/theme';
+
+import { gdTheme } from '../../constants/theme';
 import { IMode } from '../../types/layoutTypes';
 import SParagraph from '../atomic/typography/SParagraph';
 

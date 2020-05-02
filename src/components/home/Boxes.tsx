@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { IMode } from '../../types/layoutTypes';
 import SFilledBox from '../atomic/objects/SFilledBox';
 import SFilledBoxInherited from '../atomic/objects/SFilledBoxInherited';

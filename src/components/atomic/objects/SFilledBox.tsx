@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { gdTheme } from '../../../library/theme';
+
+import { gdTheme } from '../../../constants/theme';
 import { IMode } from '../../../types/layoutTypes';
 
 // normal CSS syntax can be used, media Queries / transitions / SASS like nesting
