@@ -30,14 +30,22 @@ export const gdTheme = {
       desktop: '2560px',
     },
     breakPoints: {
-      mobileS: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileS})`,
-      mobileM: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileM})`,
-      mobileL: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileL})`,
-      tablet: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.tablet})`,
-      laptop: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.laptop})`,
-      laptopL: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.laptopL})`,
-      desktop: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`,
-      desktopL: (minMax: MinMax) => `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`,
+      mobileS: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileS})`,
+      mobileM: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileM})`,
+      mobileL: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.mobileL})`,
+      tablet: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.tablet})`,
+      laptop: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.laptop})`,
+      laptopL: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.laptopL})`,
+      desktop: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`,
+      desktopL: (minMax: MinMax) =>
+        `(${minMax}-width: ${gdTheme.layout.deviceSize.desktop})`,
     },
   },
   colors: {

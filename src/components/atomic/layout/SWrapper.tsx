@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { gdTheme } from '../../../library/theme';
+
+import { gdTheme } from '../../../constants/theme';
 import { IMode } from '../../../types/layoutTypes';
 
 // SCSS nesting
